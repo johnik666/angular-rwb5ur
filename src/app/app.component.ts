@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'LONDON';
+  name = 'Londýn';
   day = 'den';
   month = 'mesiac';
   year = 'rok';
