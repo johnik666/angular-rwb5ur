@@ -1,16 +1,17 @@
 <table>
-  <img src="pic/backgroung.jpg">
+  <img src="../../pic/backgroung.jpg">
   <tr>
     <th>
       <h1> {{name}} </h1>
     </th>
 
     <th>
-      <h2 [title]="date.day + date.month + date.year"> {{day}} </h2>
+      <h1>{{day}}.{{month}}.{{year}}</h1>
     </th>
     
     <th>
-      <h3> ----- </h3>
+      <p> Vlhkosť : {{hum}} </p>
+      <p> Teplota : {{temp}}</p>
     </th>
   </tr>    
 </table>
