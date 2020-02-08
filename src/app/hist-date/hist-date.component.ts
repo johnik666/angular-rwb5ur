@@ -8,7 +8,8 @@ import { FormControl } from '@angular/forms';
 })
 export class HistDateComponent {
   HistDate = new FormControl('');
-  share()
+  
+  Submit()
   {
     window.alert('Datum a cas boli odoslane na WEATHER.COM');
   }
