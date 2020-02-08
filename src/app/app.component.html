@@ -1,12 +1,23 @@
-<table border = 1 cellpadding = 10 cellspacing = 10> 
+<table border = 1 cellpadding = 5 cellspacing = 2> 
   <img src="backgroung-pic.png" width="" height="">
-  Historické počasie pre mesto Londýn
-  <label> 
-    Historical Date :
-    <input type="text" [formControl] = "HistDate">
-  </label>
+  
+  <tr style align="left">
+    <th width = 30%>
+      Historické počasie mesto: 
+    </th>
 
-  <tr>
+    <th width = 50%>
+      <label> 
+        Historical Date :
+        <input type="text" [formControl] = "HistDate">
+      </label>
+    </th>
+    <th width = 20%>
+      <button (click)="Submit" > Submit </button>
+    </th>
+  </tr>  
+
+  <tr style align="left">
     <th>
       <h1> {{name}} </h1>
     </th>
