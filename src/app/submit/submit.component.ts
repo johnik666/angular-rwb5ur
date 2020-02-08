@@ -4,19 +4,20 @@ import { Component } from '@angular/core';
   selector: 'app-read',
   template: `
     <input #newDate
-      (keyup.enter)="addDate(newDate.value)"
-      (blur)="addDate(newDate.value); newDate.value='' ">
-
+          (keyup.enter)="addDate(newDate.value)"
+          (blur)="addDate(newDate.value); newDate.value='' ">
     <button (click)="addDate(newDate.value)">Submit</button>
+    <ul><li *ngFor="let newDate of dates">{{newDate}}</li></ul>
   `
 })
 
 export class Read {
   
-dates = [''];
+dates = [];
 
   addDate(newDate: string) {
-    if (newDate) {
+    if (newDate) 
+    { 
       this.dates.push(newDate);
     }
   }
