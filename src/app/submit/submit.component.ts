@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <button (click)="addDate(newDate.value)">Submit</button>
     <ul>
         <li *ngFor="let newDate of dates">
-        {{newDate.indexOf(4)}}
+        {{newDate}}
         </li>
     </ul>
         
